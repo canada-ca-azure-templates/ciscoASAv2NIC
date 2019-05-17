@@ -120,7 +120,8 @@ This is helpfull to ensure there will be no keyvault duplicates in Azure as it n
 
 ## History
 
-| Date     | Release                                                                              | Change                                                                                                |
-| -------- | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
-| 20190327 |                                                                                      | Refactor template and implement keyvault secret for password. New parameter file format is also used. |
-| 20190429 | [20190429](https://github.com/canada-ca-azure-templates/ciscoasav2nic/tree/20190429) | Updated documentation and cleanup parameters                                                          |
+| Date     | Release                                                                    | Change                                                                                                |
+| -------- | -------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| 20190327 |                                                                            | Refactor template and implement keyvault secret for password. New parameter file format is also used. |
+| 20190429 | [20190429](https://github.com/canada-ca-azure-templates/asg/tree/20190501) | Updated documentation and cleanup parameters                                                          |
+
