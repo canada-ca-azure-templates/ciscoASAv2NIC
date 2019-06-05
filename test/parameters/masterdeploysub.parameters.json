@@ -5,7 +5,7 @@
         "deploymentSubArray": {
             "value": [
                 {
-                    "name": "resourcegroups",
+                    "name": "resourcegroups-ciscoasav2nic",
                     "location": "canadacentral",
                     "templateLink": "https://raw.githubusercontent.com/canada-ca-azure-templates/resourcegroups/20190514/template/azuredeploysub.json",
                     "parametersFile": "dependancy-resourcegroups-canadacentral.parameters.json"
@@ -16,7 +16,7 @@
                     "templateLink": "https://raw.githubusercontent.com/canada-ca-azure-templates/keyvaults/20190514/template/azuredeploysub.json",
                     "parametersFile": "dependancy-keyvaults.parameters.json",
                     "dependsOn": [
-                        "resourcegroups"
+                        "resourcegroups-ciscoasav2nic"
                     ]
                 },
                 {
@@ -25,7 +25,7 @@
                     "templateLink": "https://raw.githubusercontent.com/canada-ca-azure-templates/vnet-subnet/20190516/template/azuredeploysub.json",
                     "parametersFile": "dependancy-vnet-subnet.parameters.json",
                     "dependsOn": [
-                        "resourcegroups"
+                        "resourcegroups-ciscoasav2nic"
                     ]
                 }
             ]
