@@ -4,7 +4,7 @@ Param(
     [string]$subscription = "",
     [switch]$devopsCICD = $false,
     [switch]$doNotCleanup = $false,
-    [switch]$doNotPrep = $false
+    [switch]$doNotDeployPreReq = $false
 )
 
 #******************************************************************************
@@ -41,7 +41,7 @@ if (-not $devopsCICD) {
         Write-Host "You are working off the master branch... Validation will happen against the github master branch code and will not include any changes you may have made."
         Write-Host "If you want to walidate changes you have made make sure to create a new branch and push those to the remote github server with something like:"
         Write-Host ""
-        Write-Host "git branch dev ; git add ..\. ; git commit -m "Update validation" ; git push -u origin dev"
+        Write-Host "git branch dev ; git checkout dev; git add ..\. ; git commit -m "Update validation" ; git push -u origin dev"
     }
     else {
         # Make sure we update code to git
@@ -69,7 +69,7 @@ if (-not $doNotCleanup) {
     }
 }
 
-if (-not $doNotPrep) {
+if (-not $doNotDeployPreReq) {
     # Start the deployment
     Write-Host "Starting $templateLibraryName dependancies deployment...";
 

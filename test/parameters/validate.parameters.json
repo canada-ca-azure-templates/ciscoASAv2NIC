@@ -9,7 +9,7 @@
                     "keyVaultName": "PwS2-validate-[unique]"
                 },
                 "vmName": "validatefw",
-                "softwareVersion": "910.1.0",
+                "softwareVersion": "912.1.0",
                 "adminUsername": "azureadmin",
                 "adminSecret": "fwpassword",
                 "sshPublicKey": "",
